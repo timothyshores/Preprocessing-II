@@ -171,9 +171,12 @@ img {
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: 15px 0;
-  padding: 10px 0;
+  align-items: baseline;
+  margin: 20px 0;
+  padding: 20px 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 .navigation nav {
   display: flex;
@@ -186,6 +189,9 @@ img {
   font-size: 1.6rem;
   font-weight: 600;
 }
+.navigation-container {
+  border-bottom: 2px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -196,6 +202,17 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .header h2 {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.home .header p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .home .content-section {
   margin: 30px 0;
