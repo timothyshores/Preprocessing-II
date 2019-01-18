@@ -1,19 +1,4 @@
 .btn-mixin(@color, @background) {
-	// text-align: center;
-	// color: @color;
-	// font-size: 2rem;
-	// padding: 5px 0;
-	// margin: 10px auto;
-	// background: @background;
-	// display: in-line-block;
-	// width: 100%;
-	// border-radius: 15px;
-	// &:hover {
-	// 	color: @background;
-	// 	background: @color;
-	// 	border: 1px solid @background;
-	// }
-
 	color: @background;
 	font-size: 2rem;
 	padding: 10px;
@@ -47,9 +32,7 @@
 		background: @background;
 		transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
 	}
-	// background-color: lighten(@background, 50%);
+	@media @mobile {
+		margin: 15px 0 0;
+	}
 }
-
-// .mixin-test {
-// 	color: red;
-// }
