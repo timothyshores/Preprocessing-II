@@ -1,1 +1,38 @@
-// Mixins in here
+.btn-mixin(@color, @background) {
+	color: @background;
+	font-size: 2rem;
+	padding: 10px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto;
+	position: relative;
+	border: 2px solid @background;
+	border-radius: 10px;
+	transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+	&:hover {
+		color: @color;
+		background-color: transparent;
+		text-shadow: nthree;
+	}
+	&:hover:before {
+		left: 0%;
+		right: auto;
+		width: 100%;
+	}
+	&:before {
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100%;
+		width: 0px;
+		z-index: -1;
+		content: "";
+		color: @color;
+		background: @background;
+		transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+	}
+	@media @mobile {
+		margin: 15px 0 0;
+	}
+}
