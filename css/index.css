@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .container {
     max-width: 90%;
   }
@@ -184,12 +184,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .navigation {
     flex-direction: column;
   }
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .navigation nav {
     display: flex;
     justify-content: space-between;
@@ -202,9 +202,9 @@ img {
   font-size: 1.5rem;
   margin-left: 15px;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .navigation nav a {
-    margin: 10px 20px;
+    margin: 10px 20px 0;
   }
 }
 .footer {
@@ -241,7 +241,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .content-section {
     flex-direction: column;
   }
@@ -250,7 +250,7 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -259,7 +259,7 @@ img {
   width: 48%;
   padding-left: 1%;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .content-section .img-content {
     width: 100%;
   }
@@ -271,7 +271,7 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #c0c0c0;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .inverse-content {
     flex-direction: column-reverse;
   }
@@ -288,7 +288,7 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .content-destination {
     width: 100%;
   }
@@ -302,7 +302,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .content-pick {
     flex-direction: column;
     justify-content: center;
@@ -312,7 +312,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .home .content-pick .destination {
     width: 60%;
     margin: 20px auto;
