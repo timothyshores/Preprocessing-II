@@ -10,12 +10,25 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media @tablet {
+		flex-direction: column;
+	}
+
 	nav {
+		@media @tablet {
+			display: flex;
+			justify-content: space-between;
+			width: 85%;
+		}
 		a {
 			color: #000;
 			text-decoration: none;
 			font-size: 1.5rem;
 			margin-left: 15px;
+			@media @tablet {
+				margin: 10px 20px;
+			}
 		}
 	}
 }

@@ -20,14 +20,25 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 
+		@media @tablet {
+			flex-direction: column;
+		}
+
 		.text-content {
 			width: 48%;
 			padding-right: 1%;
+			@media @tablet {
+				width: 100%;
+			}
 		}
 
 		.img-content {
 			width: 48%;
 			padding-left: 1%;
+
+			@media @tablet {
+				width: 100%;
+			}
 
 			img {
 				border-radius: 10px;
@@ -38,6 +49,10 @@
 	.inverse-content {
 		padding-bottom: 30px;
 		border-bottom: 2px dashed @navigation-border;
+
+		@media @tablet {
+			flex-direction: column-reverse;
+		}
 
 		.text-content {
 			padding-left: 1%;
@@ -54,6 +69,10 @@
 		width: 75%;
 		margin: 0 auto 30px;
 
+		@media @tablet {
+			width: 100%;
+		}
+
 		img {
 			border-radius: 10px;
 		}
@@ -65,9 +84,19 @@
 		display: flex;
 		justify-content: space-between;
 
+		@media @tablet {
+			flex-direction: column;
+			justify-content: center;
+		}
+
 		.destination {
 			width: 30%;
 			margin-bottom: 30px;
+
+			@media @tablet {
+				width: 60%;
+				margin: 20px auto;
+			}
 		}
 	}
 } // home
